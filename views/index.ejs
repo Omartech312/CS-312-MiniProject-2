@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!--Sets the title and gets the css from styles-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joke Generator</title>
+    <link rel="stylesheet" href="/styles.css">
+
+</head>
+<body>
+
+    <!--coniner to handle all the user input-->
+    <div class="container">
+
+        <!--Displays headers-->
+        <h1>Get a Personalized Joke</h1>
+
+        <!--Uses a form to pass userInput-->
+        <form action="/get-joke" method="GET">
+            <!--gets user's name-->
+            <label for="name">Enter Your Name:</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required>
+            <p></p>
+
+            <!--Creates dropdown to select a category for the joke-->
+            <label for="category">Choose a Joke Category:</label>
+            <select id="category" name="category" required>
+                <!--List of categories-->
+                <option value="Any">Any</option>
+                <option value="Programming">Programming</option>
+                <option value="Miscellaneous">Miscellaneous</option>
+                <option value="Dark">Dark</option>
+            </select>
+
+            <button type="submit">Get a Joke</button>
+        </form>
+    </div>
+
+</body>
+</html>
+

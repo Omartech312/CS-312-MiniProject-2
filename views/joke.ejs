@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--sets tittle as joe for name-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joke for <%= name %></title>
+    <!--pulls styles from the css-->
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <!--displayes the container with the header and the joke-->
+    <div class="container">
+        <h1>Here’s your joke, <%= name %>!</h1>
+        <p><%= joke %></p>
+        <a href="/">Get another joke</a>
+    </div>
+</body>
+</html>
